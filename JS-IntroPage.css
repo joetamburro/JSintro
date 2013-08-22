@@ -1,0 +1,130 @@
+body {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: #D9C091;
+  font-family: Futura, Helvetcia, Arial, sans-serif;
+              -webkit-font-smoothing: antialiased;
+}
+
+* {
+  vertical-align: top;
+}
+
+header {
+  height: 100px;
+  width: 100%;
+  background: #466673;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+   text-shadow: 1px 1px 2px #504135;
+}
+
+h3 {
+   text-shadow: 1px 1px 2px #504135;
+}
+
+.wrapper {
+  min-height:100%;
+  position:relative;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1000px;
+}
+.left-column {
+  margin-top: 20px;
+  height: 545px;
+  width: 49%;
+  display: inline-block;
+}
+
+.right-column {
+  margin-top: 20px;
+  height: 545px;
+  width: 49%;
+  display: inline-block;
+}
+
+.left-column h2{
+  margin-left: 104px;
+}
+
+h2 {
+  margin-bottom: 25px;
+  color: #fff;  
+}
+
+input {
+  width: 140px;
+  height: 30px;
+  margin-left: 150px;
+  margin-bottom: 10px;
+}
+
+p {
+  text-indent: 2em;
+  color: #fff;
+  font-size: 22px;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  background: #466673;
+  text-align: center;
+  color: #fff;
+  bottom: 0;
+  left: 0;
+}
+
+footer h3{
+  text-align: center;
+}
+
+.button {
+  margin-left: 157px;
+  -webkit-box-shadow:inset 0px 0px 8px 1px #dcecfb;
+  box-shadow:inset 0px 0px 8px 1px #dcecfb;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #bedaf7), color-stop(1, #7197bd) );
+  background-color:#bedaf7;
+  -webkit-border-top-left-radius:12px;
+  border-top-left-radius:12px;
+  -webkit-border-top-right-radius:12px;
+  border-top-right-radius:12px;
+  -webkit-border-bottom-right-radius:12px;
+  border-bottom-right-radius:12px;
+  -webkit-border-bottom-left-radius:12px;
+  border-bottom-left-radius:12px;
+  text-indent:0px;
+  border:1px solid #84bbf3;
+  display:inline-block;
+  color:#ffffff;
+  font-family:Georgia;
+  font-size:15px;
+  font-weight:bold;
+  font-style:italic;
+  height:35px;
+  line-height:35px;
+  width:120px;
+  text-decoration:none;
+  text-align:center;
+  text-shadow:1px 1px 0px #528ecc;
+}
+
+.button:hover {
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #b1cce8), color-stop(1, #2e71b3) );
+  background:-moz-linear-gradient( center top, #b1cce8 5%, #2e71b3 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#b1cce8', endColorstr='#2e71b3');
+  background-color:#b1cce8;  
+}
+
+.button:active {
+  position:relative;
+  top:1px;
+}
