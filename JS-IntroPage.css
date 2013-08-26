@@ -1,3 +1,7 @@
+* {
+  vertical-align: top;
+}
+
 body {
   width: 100%;
   padding: 0;
@@ -7,9 +11,7 @@ body {
               -webkit-font-smoothing: antialiased;
 }
 
-* {
-  vertical-align: top;
-}
+/* Header Section*/
 
 header {
   height: 100px;
@@ -26,6 +28,8 @@ h1 {
 h3 {
    text-shadow: 1px 1px 2px #504135;
 }
+/* End Header Section*/
+
 
 .wrapper {
   min-height:100%;
@@ -36,6 +40,8 @@ h3 {
   margin: 0 auto;
   width: 1000px;
 }
+/* Begin main section stylings*/
+
 .left-column {
   margin-top: 20px;
   height: 545px;
@@ -72,6 +78,8 @@ p {
   font-size: 22px;
 }
 
+/* Footer*/
+
 footer {
   height: 100px;
   width: 100%;
@@ -86,6 +94,8 @@ footer {
 footer h3{
   text-align: center;
 }
+
+/* Button Stylings */
 
 .button {
   margin-left: 157px;
@@ -127,4 +137,101 @@ footer h3{
 .button:active {
   position:relative;
   top:1px;
+}
+
+.Button-2{
+  text-decoration: none;
+  text-align: center;
+  text-shadow: 0px 2px 1px #810e05;
+  height: 53px;
+  width: 140px;
+  position: absolute;
+  bottom: 12;
+  left: 180;
+  line-height: 3;
+  font-size: 20;
+  font-family: 'Press Start 2P';
+  color: white;
+  border-radius: 13;
+  background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #8F423B) );
+  background: -moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+  background-color: #FFFFFF;
+}
+
+.Button-2:hover {
+  -moz-box-shadow:inset 0px 1px 0px 0px #f5978e;
+  -webkit-box-shadow:inset 0px 1px 0px 0px #f5978e;
+  box-shadow:inset 0px 1px 0px 0px #f5978e;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #c62d1f) );
+  background:-moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
+  background-color:#f24537;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #c62d1f), color-stop(1, #f24537) );
+  background:-moz-linear-gradient( center top, #c62d1f 5%, #f24537 100% );
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#c62d1f', endColorstr='#f24537');
+  background-color:#c62d1f;
+  position:absolute;
+}
+
+.Button-2:active {
+  bottom:0px;
+}
+
+/* Modal Stylings*/
+
+.modal {
+  background: rgba(0,0,0,0.0); 
+  z-index:2;
+  top: 0; 
+  left: 0;
+  bottom:0;
+  right:0;
+  height: 0;
+  overflow:hidden;
+  transition: background 0.4s ease;
+}
+ 
+.modal-active {
+  background: rgba(0,0,0,0.5); 
+  position:  fixed; 
+  height: auto;
+}
+ 
+.modal-active .modal-box {
+  opacity: 1;
+ 
+}
+ 
+.modal-box {
+  opacity: 0;
+  height:200px;
+  width:500px;
+  text-align: center;
+  position: relative;
+  border-radius:5;
+  background: #fff;
+  margin: 0 auto;
+  box-shadow: 0 2px 2px #585858;
+  transition: all 0.5s ease;
+}
+
+.modal-box p {
+  color: #000;
+}
+
+.active {
+  height:117px;
+  width:520px;
+  margin-right:277px;
+  margin-top:74px;
+  float:right;
+  -webkit-transition:height 1.2s ease;
+  background: grey;
+}
+
+.warning {
+  background:yellow;
+  -webkit-input-placeholder {
+    color: white; }
 }

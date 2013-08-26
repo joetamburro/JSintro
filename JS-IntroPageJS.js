@@ -1,27 +1,54 @@
 $(document).ready(function(){
   $('.Button').click(function() {
+      if (validateForm()) {
+          var Value = $('.name').val();
+          $('.name').text(Value);
+  
+          var Value = $('.age').val();
+          $('.age').text(Value);
+  
+          var Value = $('.occupation').val();
+          $('.occupation').text(Value);
+  
+          var Value = $('.birthland').val();
+          $('.birthland').text(Value);
+  
+          var Value = $('.location').val();
+          $('.location').text(Value);
+  
+          var Value = $('.beer').val();
+          $('.beer').text(Value);
 
-      var Value = $('.name').val();
-      $('.name').text(Value);
-  
-      var Value = $('.age').val();
-      $('#age').text(Value);
-  
-      var Value = $('.occupation').val();
-      $('#occupation').text(Value);
-  
-      var Value = $('.birthland').val();
-      $('#birthland').text(Value);
-  
-      var Value = $('.location').val();
-      $('#location').text(Value);
-  
-      var Value = $('.beer').val();
-      $('#beer').text(Value);
+          var Value = $('.dislike').val();
+          $('.dislike').text(Value);
 
-      var Value = $('.dislike').val();
-      $('#dislike').text(Value);
+        }
+
   })
- 
- 
+
+  // modal close button
+  $('.Button-2').click(function () {
+    console.log('done!')
+    $('.modal').removeClass('modal-active');
+  })  
+                                                                                 
 })
+
+function validateForm (){
+  // reset status
+  var good=true                                       
+  $('.errormessage-left').removeClass('active-left')
+  $('input').removeClass("warning")
+  $('input').each(function(){
+    if ($(this).val() == "") {
+      console.log("found a bad one");
+      good=false
+      $(this).addClass("warning")
+      $('.errormessage-left').  addClass('active-left'),
+      $('.modal').addClass('modal-active'); 
+    }
+  })
+  console.log(good)
+  return good
+}
+
