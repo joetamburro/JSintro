@@ -1,3 +1,5 @@
+var usersCollection = []
+
 $(document).ready(function(){
   $('.Button').click(function() {
       if (validateForm()) {
@@ -21,6 +23,11 @@ $(document).ready(function(){
 
           var Value = $('.dislike').val();
           $('.dislike').text(Value);
+
+          usersCollection.push(getFormValues() );
+          updateUserList(usersCollection);
+
+          
 
         }
 
@@ -52,3 +59,25 @@ function validateForm (){
   return good
 }
 
+
+
+function getFormValues () {
+  var nameVal = $('.name').val();
+ 
+
+  var formData = {
+    name: nameVal,  
+  }
+
+  return formData
+}
+
+function updateUserList (list) {
+  var ul = $('.users-list ul')
+  ul.html('')
+
+  list. forEach(function(user){
+    var text = "<li>" + user.name + "</li>"
+    ul.append(text)
+  })
+}
