@@ -4,8 +4,8 @@
 
 body {
   width: 100%;
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   background: #D9C091;
   font-family: Futura, Helvetcia, Arial, sans-serif;
               -webkit-font-smoothing: antialiased;
@@ -14,52 +14,58 @@ body {
 /* Header Section*/
 
 header {
-  height: 100px;
+  position: fixed;
+  height: 75px;
   width: 100%;
   background: #466673;
   text-align: center;
   color: #fff;
 }
 
+
+
 h1 {
    text-shadow: 1px 1px 2px #504135;
+   margin: 0 auto;
 }
 
 h3 {
    text-shadow: 1px 1px 2px #504135;
+   margin: 0 auto;
 }
 /* End Header Section*/
 
 
-.wrapper {
-  min-height:100%;
-  position:relative;
-}
 
+
+
+/* Begin main section stylings*/
 .container {
   margin: 0 auto;
-  width: 1100px;
+  width: 960px;
+  height: 100%;
 }
-/* Begin main section stylings*/
+
+.main {
+  position: relative;
+  top: 70px;
+  z-index: -1;
+}
 
 .users-list {
   display: inline-block;
   margin-top: 10px;
-  height: 545px;
   width: 32%;
-
 }
 
 .left-column {
   margin-top: 10px;
-  height: 545px;
   width: 32%;
   display: inline-block;
 }
 
 .middle-column {
   margin-top: 10px;
-  height: 545px;
   width: 32%;
   display: inline-block;
 }
@@ -109,14 +115,14 @@ input {
 /* Footer*/
 
 footer {
-  height: 100px;
+  height: 35px;
   width: 100%;
-  position: absolute;
+  position: fixed;
   background: #466673;
   text-align: center;
   color: #fff;
-  bottom: 0;
-  left: 0;
+  bottom: 0px;
+  left: 0px;
 }
 
 footer h3{
@@ -174,13 +180,13 @@ footer h3{
   height: 53px;
   width: 140px;
   position: absolute;
-  bottom: 12;
-  left: 180;
-  line-height: 3;
-  font-size: 20;
+  bottom: 12px;
+  left: 180px;
+  line-height: 45px;
+  font-size: 20px;
   font-family: 'Press Start 2P';
   color: white;
-  border-radius: 13;
+  border-radius: 13px;
   background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f24537), color-stop(1, #8F423B) );
   background: -moz-linear-gradient( center top, #f24537 5%, #c62d1f 100% );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f24537', endColorstr='#c62d1f');
@@ -203,7 +209,7 @@ footer h3{
 }
 
 .Button-2:active {
-  bottom:0px;
+  bottom: 5px;
 }
 
 /* Modal Stylings*/
@@ -211,11 +217,11 @@ footer h3{
 .modal {
   background: rgba(0,0,0,0.0); 
   z-index:2;
-  top: 0; 
-  left: 0;
-  bottom:0;
-  right:0;
-  height: 0;
+  top: 0px; 
+  left: 0px;
+  bottom:0px;
+  right:0px;
+  height: 0px;
   overflow:hidden;
   transition: background 0.4s ease;
 }
@@ -239,7 +245,7 @@ footer h3{
   position: relative;
   border-radius:5;
   background: #fff;
-  margin: 0 auto;
+  margin: 0px auto;
   box-shadow: 0 2px 2px #585858;
   transition: all 0.5s ease;
 }

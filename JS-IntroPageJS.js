@@ -1,7 +1,7 @@
 var usersCollection = []
 
 $(document).ready(function(){
-  $('.Button').click(function() {
+  $('.button').click(function() {
       if (validateForm()) {
           var Value = $('.name').val();
           $('.name').text(Value);
@@ -25,9 +25,7 @@ $(document).ready(function(){
           $('.dislike').text(Value);
 
           usersCollection.push(getFormValues() );
-          updateUserList(usersCollection);
-
-          
+          updateUserList(usersCollection);   
 
         }
 
@@ -48,7 +46,7 @@ function validateForm (){
   $('input').removeClass("warning")
   $('input').each(function(){
     if ($(this).val() == "") {
-      console.log("found a bad one");
+      console.log("found an empty");
       good=false
       $(this).addClass("warning")
       $('.errormessage-left').  addClass('active-left'),
@@ -58,8 +56,6 @@ function validateForm (){
   console.log(good)
   return good
 }
-
-
 
 function getFormValues () {
   var nameVal = $('.name').val();
